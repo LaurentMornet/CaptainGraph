@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<style>
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.plot {
+    position: absolute;
+    overflow: hidden;
+    border: solid 1px green;
+}
+</style>
+<script src="qrc:/resources/plotly.min.js"></script>
+</head>
+<body>
+<div id="root">

@@ -1,0 +1,48 @@
+<RCC>
+    <qresource prefix="resources">
+
+        <file>appicons/add.svg</file>
+        <file>appicons/down.svg</file>
+        <file>appicons/redo.svg</file>
+        <file>appicons/refresh.svg</file>
+        <file>appicons/trash.svg</file>
+        <file>appicons/undo.svg</file>
+        <file>appicons/up.svg</file>
+        <file>appicons/popup_menu.svg</file>
+        <file>appicons/splith.svg</file>
+        <file>appicons/splitv.svg</file>
+        <file>appicons/merge_top.svg</file>
+        <file>appicons/merge_right.svg</file>
+        <file>appicons/merge_left.svg</file>
+        <file>appicons/merge_bottom.svg</file>
+
+        <file>plottypes/line.svg</file>
+        <file>plottypes/scatter.svg</file>
+        <file>plottypes/bar.svg</file>
+        <file>plottypes/scatter_3d.svg</file>
+        <file>plottypes/polar.svg</file>
+        <file>plottypes/stem.svg</file>
+        <file>plottypes/hline.svg</file>
+        <file>plottypes/vline.svg</file>
+        <file>plottypes/pie.svg</file>
+        <file>plottypes/pcolormesh.svg</file>
+
+        <file>linestyles/dash.svg</file>
+        <file>linestyles/dashdot.svg</file>
+        <file>linestyles/dot.svg</file>
+        <file>linestyles/solid.svg</file>
+        <file>linestyles/none.svg</file>
+
+        <file>markershapes/circle.svg</file>
+        <file>markershapes/cross.svg</file>
+        <file>markershapes/losange.svg</file>
+        <file>markershapes/none.svg</file>
+        <file>markershapes/plus.svg</file>
+        <file>markershapes/square.svg</file>
+        <file>markershapes/triangle.svg</file>
+
+        <file>html.template</file>
+        <file>plotly.min.js</file>
+
+    </qresource>
+</RCC>
