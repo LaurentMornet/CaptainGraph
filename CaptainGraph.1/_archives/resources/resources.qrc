@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>html_base_2d.template</file>
+        <file>plotly.min.js</file>
+        <file>metaplots/scatter.png</file>
+        <file>metaplots/bar.png</file>
+        <file>metaplots/scatter3d.png</file>
+        <file>metaplots/styles/linestyles/solid.png</file>
+        <file>metaplots/styles/linestyles/dot.png</file>
+        <file>metaplots/styles/linestyles/dashdot.png</file>
+    </qresource>
+</RCC>

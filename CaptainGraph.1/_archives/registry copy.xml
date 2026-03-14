@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+    <custom-icon-types>
+        <custom-icon-type id="plot_type">
+            <custom-style-type-item id="0" label="plot_2d"      icon="plottypes/plot_2d"/>
+            <custom-style-type-item id="1" label="scatter_2d"   icon="plottypes/scatter_2d"/>
+            <custom-style-type-item id="2" label="bar_2d"       icon="plottypes/bar_2d"/>
+            <custom-style-type-item id="3" label="stem"         icon="plottypes/stem"/>
+            <custom-style-type-item id="4" label="vline"        icon="plottypes/vline"/>
+            <custom-style-type-item id="5" label="hline"        icon="plottypes/hline"/>
+            <custom-style-type-item id="6" label="pie"          icon="plottypes/pie"/>
+            <custom-style-type-item id="7" label="polar_2d"     icon="plottypes/polar_2d"/>
+            <custom-style-type-item id="8" label="plot_3d"      icon="plottypes/plot_3d"/>
+            <custom-style-type-item id="9" label="image"        icon="plottypes/image"/>
+        </custom-icon-type>
+        <custom-icon-type id="line_style">
+            <custom-style-type-item id="0" label="None"          icon="linestyles/none"/>
+            <custom-style-type-item id="1" label="Solid"         icon="linestyles/solid"/>
+            <custom-style-type-item id="2" label="Dot"           icon="linestyles/dot"/>
+            <custom-style-type-item id="3" label="Dash"          icon="linestyles/dash"/>
+            <custom-style-type-item id="4" label="DashDot"       icon="linestyles/dashdot"/>
+        </custom-icon-type>
+        <custom-icon-type id="marker_shape">
+            <custom-style-type-item id="0" label="None"          icon="markershapes/none"/>
+            <custom-style-type-item id="1" label="Circle"        icon="markershapes/circle"/>
+            <custom-style-type-item id="2" label="Square"        icon="markershapes/square"/>
+            <custom-style-type-item id="3" label="Losange"       icon="markershapes/losange"/>
+        </custom-icon-type>
+    </custom-icon-types>
+    <plot-types>
+        <plot-type id="plot_2d" icon="0">
+            <style>
+                <style-item id="line-style" type="custom-icon" mode="basic" label="Line Style" initial="1">
+                    <style-item-arg value="line_style"/>
+                    <style-item-arg value="80"/>
+                    <style-item-arg value="20"/>
+                </style-item>
+                <style-item id="line-color" type="color" mode="basic" label="Line Color" initial="blue"/>
+                <style-item id="line-width" type="int-range" mode="basic" label="Line Width" initial="1">
+                    <style-item-arg value="1"/>
+                    <style-item-arg value="10"/>
+                </style-item>
+                <style-item id="marker-shape" type="custom-icon" mode="advanced" label="Marker Shape" initial="0">
+                    <style-item-arg value="marker_shape"/>
+                    <style-item-arg value="25"/>
+                    <style-item-arg value="25"/>
+                </style-item>
+                <style-item id="marker-size" type="int-range" mode="advanced" label="Marker Size" initial="3"/>
+                <style-item id="marker-edge-color" type="color" mode="advanced" label="Marker Edge Color" initial="blue"/>
+                <style-item id="marker-face-color" type="color" mode="advanced" label="Marker Face Color" initial="none"/>
+            </style>
+        </plot-type>
+        <plot-type id="scatter_2d" icon="1">
+            <style>
+                <style-item id="line-style" type="custom-icon" mode="advanced" label="Line Style" initial="0">
+                    <style-item-arg value="line_style"/>
+                    <style-item-arg value="80"/>
+                    <style-item-arg value="20"/>
+                </style-item>
+                <style-item id="line-color" type="color" mode="advanced" label="Line Color" initial="blue"/>
+                <style-item id="line-width" type="int-range" mode="advanced" label="Line Width" initial="1">
+                    <style-item-arg value="1"/>
+                    <style-item-arg value="10"/>
+                </style-item>
+                <style-item id="marker-shape" type="custom-icon" mode="basic" label="Marker Shape" initial="1">
+                    <style-item-arg value="marker_shape"/>
+                    <style-item-arg value="25"/>
+                    <style-item-arg value="25"/>
+                </style-item>
+                <style-item id="marker-size" type="int-range" mode="basic" label="Marker Size" initial="3"/>
+                <style-item id="marker-edge-color" type="color" mode="basic" label="Marker Edge Color" initial="blue"/>
+                <style-item id="marker-face-color" type="color" mode="basic" label="Marker Face Color" initial="none"/>
+            </style>
+        </plot-type>
+        <plot-type id="bar_2d" icon="2">
+            <style>
+                <style-item id="face-color" type="color" mode="basic" label="Face Color" initial="blue"/>
+                <style-item id="edge-color" type="color" mode="basic" label="Edge Color" initial="blue"/>
+                <style-item id="width" type="double-range" mode="advanced" label="Width" initial="0.8">
+                    <style-item-arg value="0.1"/>
+                    <style-item-arg value="1.0"/>
+                </style-item>
+            </style>
+        </plot-type>
+        <plot-type id="stem" icon="3">
+            <style>
+                <style-item id="line-style" type="custom-icon" mode="basic" label="Line Style" initial="2">
+                    <style-item-arg value="line_style"/>
+                    <style-item-arg value="80"/>
+                    <style-item-arg value="20"/>
+                </style-item>
+                <style-item id="line-color" type="color" mode="basic" label="Line Color" initial="blue"/>
+                <style-item id="line-width" type="int-range" mode="advanced" label="Line Width" initial="1">
+                    <style-item-arg value="1"/>
+                    <style-item-arg value="10"/>
+                </style-item>
+                <style-item id="marker-shape" type="custom-icon" mode="basic" label="Marker Shape" initial="1">
+                    <style-item-arg value="marker_shape"/>
+                    <style-item-arg value="25"/>
+                    <style-item-arg value="25"/>
+                </style-item>
+                <style-item id="marker-size" type="int-range" mode="basic" label="Marker Size" initial="3"/>
+                <style-item id="marker-edge-color" type="color" mode="basic" label="Marker Edge Color" initial="blue"/>
+                <style-item id="marker-face-color" type="color" mode="basic" label="Marker Face Color" initial="none"/>
+            </style>
+        </plot-type>
+        <plot-type id="vline" icon="4">
+            <style>
+                <style-item id="line-style" type="custom-icon" mode="basic" label="Line Style" initial="2">
+                    <style-item-arg value="line-style"/>
+                    <style-item-arg value="80"/>
+                    <style-item-arg value="20"/>
+                </style-item>
+                <style-item id="line-color" type="color" mode="basic" label="Line Color" initial="black"/>
+                <style-item id="line-width" type="int-range" mode="advanced" label="Line Width" initial="1">
+                    <style-item-arg value="1"/>
+                    <style-item-arg value="10"/>
+                </style-item>
+            </style>
+        </plot-type>
+        <plot-type id="hline" icon="5">
+            <style>
+                <style-item id="line-style" type="0" mode="basic" label="Line Style" initial="2"/>
+                <style-item id="line-color" type="color" mode="basic" label="Line Color" initial="black"/>
+                <style-item id="line-width" type="int-range" mode="advanced" label="Line Width" initial="1">
+                    <style-item-arg value="1"/>
+                    <style-item-arg value="10"/>
+                </style-item>
+            </style>
+        </plot-type>
+        <plot-type id="pie" icon="6">
+        </plot-type>
+        <plot-type id="polar_2d" icon="7">
+        </plot-type>
+        <plot-type id="plot_3d" icon="8">
+            <style>
+                <style-item id="line-style" type="custom-icon" mode="basic" label="Line Style" initial="1">
+                    <style-item-arg value="line_style"/>
+                    <style-item-arg value="80"/>
+                    <style-item-arg value="20"/>
+                </style-item>
+                <style-item id="line-color" type="color" mode="basic" label="Line Color" initial="red"/>
+                <style-item id="line-width" type="int-range" mode="basic" label="Line Width" initial="1">
+                    <style-item-arg value="1"/>
+                    <style-item-arg value="10"/>
+                </style-item>
+                <style-item id="marker-shape" type="custom-icon" mode="advanced" label="Marker Shape" initial="0">
+                    <style-item-arg value="marker_shape"/>
+                    <style-item-arg value="25"/>
+                    <style-item-arg value="25"/>
+                </style-item>
+                <style-item id="marker-size" type="int-range" mode="advanced" label="Marker Size" initial="3"/>
+                <style-item id="marker-edge-color" type="color" mode="advanced" label="Marker Edge Color" initial="red"/>
+                <style-item id="marker-face-color" type="color" mode="advanced" label="Marker Face Color" initial="none"/>
+            </style>
+        </plot-type>
+        <plot-type id="image" icon="9">
+        </plot-type>
+    </plot-types>
+</registry>
