@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="qrc:/resources/plotly.min.js"></script>
+  <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* empêche les ascenseurs */
+    }
+    #plot {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="plot"></div>
+  <script>
+    var layout = {
+      margin: { l: 0, r: 0, t: 0, b: 0 }
+    };
+    Plotly.newPlot('plot', @DATA@, @LAYOUT@, @CONFIG@);
+    document.addEventListener('DOMContentLoaded', function() {
+      new QWebChannel(qt.webChannelTransport, function(channel) {
+        document.getElementById('plot').addEventListener('mousedown', function() {
+          channel.objects.bridge.mouse_pressed();
+        });
+      });
+    });
+    window.addEventListener('resize', () => {
+      if (typeof Plotly !== 'undefined') {
+          Plotly.Plots.resize('plot');
+      }
+    });
+  </script>
+</body>
+</html>
